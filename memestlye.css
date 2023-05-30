@@ -1,22 +1,53 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-  }
-  
-  h1 {
+
+h1 {
     text-align: center;
   }
   
-  form {
+form {
+    align-items: center;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    max-width: 300px;
-    margin: 20px auto;
+    position: center;
+  }
+
+input {
+    width: 20%;
+    margin-bottom: 20px;
   }
   
-  label {
-    margin-top: 10px;
+.meme {
+    position: relative;
+    display: center;
+    margin: 20px;
+    width: 450px
   }
-  
-  
-  
+
+.meme img {
+  width: 450px;
+  height: auto;
+  }
+
+.meme .top-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+   font-size: 30px;
+   font-family: Impact, sans-serif;
+   color:  rgba(255, 255, 0, 0.751);
+    text-shadow: 2px 2px 2px black;
+    margin: -450px
+}
+
+.meme .bottom-text {
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 30px;
+      font-family: Impact, sans-serif;
+      color:  rgba(255, 255, 0, 0.751);
+      text-shadow: 2px 2px 2px black;
+      margin: -50px;
+}

@@ -3,14 +3,15 @@ function generateMeme(event) {
   
     const topText = document.getElementById('top-text').value;
     const bottomText = document.getElementById('bottom-text').value;
-    const imageUrl = document.getElementById('image-url').value;
+    const imageUrl = document.getElementById('image-link').value;
   
     document.getElementById('top-text').value = '';
     document.getElementById('bottom-text').value = '';
-    document.getElementById('image-url').value = '';
+    document.getElementById('image-link').value = '';
 
     const memeContainer = document.createElement('div');
     memeContainer.classList.add('meme');
+
 
     const memeImage = new Image();
     memeImage.src = imageUrl;
